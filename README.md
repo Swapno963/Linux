@@ -44,10 +44,10 @@ source myenv/bin/activate
 ```
 
 
-## 4. Install Django
+## 4. Install Django,djangorestframework
 Once inside the virtual environment, install Django:
 ```bash
-pip3 install django
+pip3 install django djangorestframework
 ```
 
 
