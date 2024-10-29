@@ -47,7 +47,7 @@ source myenv/bin/activate
 ## 4. Install Django
 Once inside the virtual environment, install Django:
 ```bash
-pip install django
+pip3 install django
 ```
 
 
