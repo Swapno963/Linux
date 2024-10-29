@@ -60,12 +60,12 @@ deactivate
 
 
 ## 6. Django Project Commands
-Create a New Django Project:
+-Create a New Django Project:
 ```bash
 django-admin startproject myproject
 ```
 
-Create a New Django App:
+- Create a New Django App:
 ```bash
 python manage.py startapp myapp
 ```
