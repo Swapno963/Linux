@@ -32,7 +32,7 @@ sudo apt install python3-venv
 
 
 
-## Create and Activate a Virtual Environment
+## 3. Create and Activate a Virtual Environment
 Create the virtual environment:
 ```bash
 python3 -m venv myenv
@@ -59,4 +59,29 @@ deactivate
 ```
 
 
+## 6. Django Project Commands
+Create a New Django Project:
+```bash
+django-admin startproject myproject
+```
 
+Create a New Django App:
+```bash
+python manage.py startapp myapp
+```
+Make Migrations: This command creates migration files for any changes made to the models.
+```bash
+python manage.py makemigrations
+```
+Apply Migrations: This command applies the migration files to the database.
+```bash
+python manage.py migrate
+```
+Create a Superuser: Set up an admin account to access Django’s admin interface.
+```bash
+python manage.py createsuperuser
+```
+Run the Development Server: Start the Django development server to view your project in the browser.
+```bash
+python manage.py runserver
+```
