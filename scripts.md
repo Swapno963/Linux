@@ -1,4 +1,4 @@
-  GNU nano 7.2                                                                                                       simple.sh                                                                                                                
+```ch bash                                                                                                         simple.sh                                                                                                                
 #!/bin/bash
 
 
@@ -42,6 +42,8 @@ done
 count=1
 while [ $count -le 5 ]; do
     echo "Count: $count"
+
+```
     count=$((count + 1))
 done
 
