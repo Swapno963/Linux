@@ -1,0 +1,27 @@
+Working with a user who has access to sudo is a better practice compared to working directly as the sudo user (or root) for several important reasons:
+
+1. Preventing Accidental System Changes
+Direct sudo/root Risks: The sudo or root user has unrestricted access to the system. A simple mistake, such as deleting or modifying critical files, can break the entire operating system.
+Safer Approach: Using a standard user with sudo privileges ensures that dangerous commands require deliberate action and explicit privilege elevation.
+2. Reducing Security Risks
+Attack Surface: Working as sudo or root increases the risk if your session is compromised. Any command executed by a malicious actor will have full system access.
+Auditing: Using sudo forces users to log commands with elevated privileges, which can help in tracking unauthorized or accidental actions in logs.
+3. Encouraging Principle of Least Privilege
+Limiting Permissions: By default, a non-root user operates with limited permissions, reducing the scope of potential harm.
+Controlled Elevation: With sudo, only commands requiring elevated privileges are run as root, minimizing the chance of unintended consequences.
+4. Logging and Accountability
+Command History: Commands executed with sudo are logged in /var/log/auth.log (or equivalent). This provides a clear trail for auditing and troubleshooting.
+Accountability: Working as a user who invokes sudo identifies who executed a particular action, making it easier to assign responsibility.
+5. Preventing Privilege Escalation
+Security Exploits: If a vulnerability is exploited while logged in as root, the attacker gains unrestricted access. Operating as a non-root user adds a layer of protection.
+Temporary Privileges: With sudo, privileges are elevated temporarily, reducing the time an attacker has access to sensitive commands.
+6. Better Practices for Multi-User Environments
+User-Specific Access: Each user can be given tailored permissions through sudoers, allowing fine-grained control over who can perform what tasks.
+Isolation: Actions performed by different users can be easily distinguished, simplifying troubleshooting and maintaining system hygiene.
+7. Protecting Against Automated Errors
+Scripts and Automation: Running scripts as sudo or root without care can lead to unintended consequences. Limiting root privileges ensures automation operates safely.
+8. Avoiding Dependency Misconfiguration
+Environment Differences: Commands run as sudo or root can sometimes create files and dependencies with permissions that normal users cannot access, leading to configuration problems.
+Consistency: By working primarily as a non-root user, dependencies and configurations are more likely to match the intended environment.
+9. Compliance with Industry Standards
+Many industry regulations and best practices, such as those from ISO or NIST, recommend avoiding the use of root for day-to-day tasks to minimize risks.
