@@ -25,3 +25,16 @@ Environment Differences: Commands run as sudo or root can sometimes create files
 Consistency: By working primarily as a non-root user, dependencies and configurations are more likely to match the intended environment.
 9. Compliance with Industry Standards
 Many industry regulations and best practices, such as those from ISO or NIST, recommend avoiding the use of root for day-to-day tasks to minimize risks.
+
+
+
+
+
+add user : sudo adduser <username>
+add user to sudo group : sudo usermod -aG sudo <username>
+The -aG option ensures the user is added to the group without removing them from any other groups they belong to.
+
+Verify the user is in the sudo group: groups <username>
+
+switch to new user : su - <username>
+
