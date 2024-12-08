@@ -1,0 +1,23 @@
+1. check which process is useing port 6379
+```bash
+sudo lsof -i:6379
+```
+
+
+2. Stop service and prevent it from restarting 
+```bash
+sudo systemctl stop redis
+```
+
+3. Docker run and build
+  i. first remove containers in docker 
+  ii. make 6379 port useable
+```bash
+sudo cocker-compose up --build
+```
+
+
+4. Execute code on a container named "backend"
+```bash
+sudo docker exec -it backend sh
+```
