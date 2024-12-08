@@ -1,0 +1,25 @@
+1. delete empty folder
+rmdir -p folder_name
+
+2. Force to delete if it contain something
+rmdir-p folder_name
+
+3. Copy file from current directory to another folder
+cp file1 file2 [terget_path]
+
+4. Duplicate content of folder
+cp source_file /path/to/taret/file
+
+5. Duplicate a directory and it's content
+cp -R source_file /path/to/taret/file
+
+6. Re name file
+mv old_name.txt new_name.txt
+
+7. Create empty file in a specific directory
+touch [options] [path and file name]
+
+8. zip and un-zip
+zip[options] zip_file_name file1 file2
+
+unzip[options] zip_file_name
