@@ -13,7 +13,7 @@ sudo systemctl stop redis
   i. first remove containers in docker 
   ii. make 6379 port useable
 ```bash
-sudo cocker-compose up --build
+sudo docker-compose up --build
 ```
 
 
