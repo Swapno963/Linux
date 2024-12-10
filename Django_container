@@ -21,3 +21,31 @@ sudo docker-compose up --build
 ```bash
 sudo docker exec -it backend sh
 ```
+
+
+
+
+need to know more about 
+
+
+1. Avoid Using sudo
+Running Docker with sudo isn't ideal for security and convenience. Instead, add your user to the docker group so you don't need to use sudo:
+
+bash
+Copy code
+sudo usermod -aG docker $USER
+After running this command, log out and log back in to apply the changes. Then, you can simply run:
+
+bash
+Copy code
+docker-compose up --build
+
+
+
+4. Remove Unused Resources Before Building
+Clean up unused Docker resources (e.g., old images, containers) before running the build:
+
+bash
+Copy code
+docker system prune -f
+docker-compose up --build
