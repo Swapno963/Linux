@@ -1,4 +1,4 @@
-# Linux Setup Guide
+# Project on Linux Setup Guide
 
 This guide provides step-by-step instructions for setting up Python, pip, virtual environments, and Django on a Linux system.
 
