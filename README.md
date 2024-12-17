@@ -79,7 +79,7 @@ python manage.py migrate
 ```
 - Create a Superuser: Set up an admin account to access Django’s admin interface.
 ```bash
-python manage.py createsuperuser
+python manage.py createsuperuser --username ad --email admin@example.com --password 12
 ```
 - Run the Development Server: Start the Django development server to view your project in the browser.
 ```bash
