@@ -37,7 +37,10 @@ sudo apt install python3-venv
 ```bash
 python3 -m venv myenv && source myenv/bin/activate
 ```
-
+### Do Everything at once
+```bash
+pip3 install django && django-admin startproject myproject . && python manage.py startapp myapp && python manage.py migrate && python manage.py createsuperuser --username ad --email admin@example.com && pip3 freeze > requirements.txt && python manage.py runserver
+```
 
 ## 4. Install Django,djangorestframework
 Once inside the virtual environment, install Django:
