@@ -32,15 +32,10 @@ sudo apt install python3-venv
 
 
 
-## 3. Create and Activate a Virtual Environment
+## 3. Create and Activate a Virtual Environment and Activate it
 - Create the virtual environment:
 ```bash
-python3 -m venv myenv
-```
-
-- Activate the virtual environment:
-```bash
-source myenv/bin/activate
+python3 -m venv myenv && source myenv/bin/activate
 ```
 
 
